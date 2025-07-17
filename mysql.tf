@@ -20,6 +20,7 @@ resource "mysql_user" "azure_plaintext" {
   plaintext_password = "password"
 }
 
+## Added after 3.0.78 upgrade
 resource "mysql_user" "azure_hex" {
   provider           = mysql.azure
   user               = "azure_hex"
